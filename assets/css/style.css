@@ -41,6 +41,13 @@ li {
     font-size: 19px;
 }
 
+span.feature-inprogress,
+    span.algorithm-inprogress,
+    span.data-structure-inprogress {
+    margin-right: 5px;
+    color: tomato;
+}
+
 span.feature-studied,
     span.algorithm-studied,
     span.data-structure-studied {

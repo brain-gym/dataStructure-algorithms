@@ -43,12 +43,22 @@ app.controller('AlgorithmsController', ['$scope', function ($scope) {
 app.controller('DataStructuresController', ['$scope', function ($scope) {
     $scope.dataStructures = [
         {
+            'title': 'Array',
+            'hasMediumPost': true,
+            'mediumPostUrl': 'https://medium.com/@itIsMadhavan/data-structure-array-quick-lookup-for-interview-a09caeb835f5',
+            'hasGithubCode': true,
+            'githubCodeUrl': 'https://github.com/brain-gym/dataStructure-algorithms/blob/master/competitive%20programming/src/com/company/dataStructure/Array.java#L8',
+            'studied': false,
+            'inprogress': true
+        },
+        {
             'title': 'Linked List',
             'hasMediumPost': false,
             'mediumPostUrl': null,
             'hasGithubCode': true,
             'githubCodeUrl': 'https://github.com/brain-gym/dataStructure-algorithms/blob/master/competitive%20programming/src/com/company/dataStructure/LinkedList.java',
-            'studied': true
+            'studied': false,
+            'inprogress': true
         }
     ];
 }]);

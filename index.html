@@ -22,6 +22,7 @@
         <ul>
             <h2>Algorithms</h2>
             <li ng-repeat="algorithm in algorithms">
+                <span class='algorithm-inprogress' ng-if='algorithm.inprogress'><i class="fa fa-clock-o"></i></span>
                 <span class='algorithm-studied' ng-if='algorithm.studied'><i class="fa fa-check"></i></span>
                 <b>{{algorithm.title}}</b>
                 <span class="medium-post" ng-if='algorithm.hasMediumPost'>
@@ -38,6 +39,7 @@
         <ul>
             <h2>Data Structures</h2>
             <li ng-repeat="dataStructure in dataStructures">
+                <span class='data-structure-inprogress' ng-if='dataStructure.inprogress'><i class="fa fa-clock-o"></i></span>
                 <span class='data-structure-studied' ng-if='dataStructure.studied'><i class="fa fa-check"></i></span>
                 <b>{{dataStructure.title}}</b>
                 <span class="medium-post" ng-if='dataStructure.hasMediumPost'>
