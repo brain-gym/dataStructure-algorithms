@@ -6,7 +6,7 @@ app.controller('AlgorithmsController', ['$scope', function ($scope) {
             'title': 'Binary Search',
             'hasMediumPost': false,
             'mediumPostUrl': '',
-            'hasGithubCode': false,
+            'hasGithubCode': true,
             'githubCodeUrl': 'https://github.com/brain-gym/dataStructure-algorithms/blob/master/competitive%20programming/src/com/company/utils/BinarySearch.java',
             'studied': true
         },
