@@ -1,4 +1,4 @@
-package com.company;
+package com.company.dataStructure;
 
 import javax.management.MBeanTrustPermission;
 import java.util.ArrayList;

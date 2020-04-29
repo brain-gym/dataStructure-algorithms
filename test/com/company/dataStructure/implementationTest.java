@@ -1,13 +1,11 @@
-package com.company;
+package com.company.dataStructure;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class implementationTest {
     @Test
     void testRemoveDuplicates(){
-        implementation imp = new implementation();
+        Implementation imp = new Implementation();
         imp.createNewList();
         imp.removeDuplicates(imp.linkedList);
         imp.linkedList.printList();
@@ -15,7 +13,7 @@ class implementationTest {
 
     @Test
     void testReverseList(){
-        implementation imp = new implementation();
+        Implementation imp = new Implementation();
         imp.createNewList();
         imp.reverseList(imp.linkedList);
         imp.linkedList.printList();

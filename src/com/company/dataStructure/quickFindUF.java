@@ -1,4 +1,4 @@
-package com.company;
+package com.company.dataStructure;
 
 public class quickFindUF {
     private int[] ids;

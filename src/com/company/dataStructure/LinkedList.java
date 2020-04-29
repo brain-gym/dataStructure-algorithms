@@ -1,4 +1,4 @@
-package com.company;
+package com.company.dataStructure;
 
 public class LinkedList {
     Node head;
@@ -139,7 +139,7 @@ class Node {
 }
 
 
-class implementation {
+class Implementation {
     LinkedList linkedList = new LinkedList();
 
     public void createNewList() {

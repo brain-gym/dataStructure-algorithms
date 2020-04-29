@@ -1,4 +1,4 @@
-package com.company;
+package com.company.dataStructure;
 
 public class QuickUnionUF {
     private int[] ids;

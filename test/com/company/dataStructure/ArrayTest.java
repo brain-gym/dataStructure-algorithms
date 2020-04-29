@@ -1,5 +1,6 @@
-package com.company;
+package com.company.dataStructure;
 
+import com.company.dataStructure.Array;
 import org.junit.jupiter.api.Test;
 
 class ArrayTest {

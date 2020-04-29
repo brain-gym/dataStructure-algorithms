@@ -1,6 +1,6 @@
 package com.company.utils;
 
-public class Search {
+public class BinarySearch {
 
 
     public static int binarySearch(int[] arr, int leftPointer, int rightPointer, int numToFind) {
