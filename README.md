@@ -1,6 +1,10 @@
 # dataStructure-algorithms
 
 
+# Tutorials
+- Fastest Sorting Algorithm [Here](https://www.youtube.com/watch?v=4Q72kbwyEmk)
+
+
 # Competitive Programming Websites
 
 My favorites websites
