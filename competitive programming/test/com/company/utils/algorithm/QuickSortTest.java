@@ -15,4 +15,12 @@ class QuickSortTest {
         int[] sorted = QuickSort.sort(arr);
         System.out.println(Arrays.toString(sorted));
     }
+
+
+    @Test
+    void reverseSort() {
+        int[] arr = new int[]{7, 3, 5, 9, 1, 4, 10, 1, 2, 89, 2};
+        int[] sorted = QuickSort.reverseSort(arr);
+        System.out.println(Arrays.toString(sorted));
+    }
 }

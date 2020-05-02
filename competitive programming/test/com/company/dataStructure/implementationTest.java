@@ -7,7 +7,7 @@ class implementationTest {
     void testRemoveDuplicates(){
         Implementation imp = new Implementation();
         imp.createNewList();
-        imp.removeDuplicates(imp.linkedList);
+        LinkedList.removeDuplicates(imp.linkedList);
         imp.linkedList.printList();
     }
 
@@ -15,7 +15,7 @@ class implementationTest {
     void testReverseList(){
         Implementation imp = new Implementation();
         imp.createNewList();
-        imp.reverseList(imp.linkedList);
+        LinkedList.reverseList(imp.linkedList);
         imp.linkedList.printList();
     }
 

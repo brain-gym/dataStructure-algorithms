@@ -15,8 +15,8 @@ app.controller('AlgorithmsController', ['$scope', function ($scope) {
             'title': 'Quick Sort',
             'hasMediumPost': true,
             'mediumPostUrl': 'https://medium.com/@itIsMadhavan/algorithms-quick-sort-4e611ec07042',
-            'hasGithubCode': false,
-            'githubCodeUrl': '',
+            'hasGithubCode': true,
+            'githubCodeUrl': 'https://github.com/brain-gym/dataStructure-algorithms/blob/master/competitive%20programming/src/com/company/utils/algorithm/QuickSort.java#L3',
             'studied': false,
             'inprogress': true
         },

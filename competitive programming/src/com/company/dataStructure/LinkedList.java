@@ -126,41 +126,10 @@ public class LinkedList {
         }
         return found;
     }
-}
-
-class Node {
-    int data;
-    Node next;
-
-    public Node(int data) {
-        this.data = data;
-        next = null;
-    }
-}
-
-
-class Implementation {
-    LinkedList linkedList = new LinkedList();
-
-    public void createNewList() {
-        linkedList.head = new Node(1);
-        Node second = new Node(1);
-        Node third = new Node(2);
-        Node four = new Node(3);
-        Node five = new Node(3);
-        Node six = new Node(4);
-
-        six.next = second;
-        five.next = six;
-        four.next = five;
-        third.next = four;
-        second.next = third;
-        linkedList.head.next = second;
-    }
 
 
     /*if the list of items are sorted in order*/
-    public void removeDuplicates(LinkedList linkedList) {
+    public static void removeDuplicates(LinkedList linkedList) {
         Node curr = linkedList.head;
 
         /* Traverse list till the last node */
@@ -188,7 +157,7 @@ class Implementation {
 //        }
     }
 
-    public void reverseList(LinkedList linkedList) {
+    public static void reverseList(LinkedList linkedList) {
         Node curr = linkedList.head;
         Node prev = null;
         Node next;
@@ -202,7 +171,8 @@ class Implementation {
         linkedList.head = prev;
     }
 
-    public Node getTheIntersectionNode(LinkedList listA, LinkedList listB) {
+
+    public static Node getTheIntersectionNode(LinkedList listA, LinkedList listB) {
         Node intersection = null;
         Node startForA = listA.head;
         Node startForB = listB.head;
@@ -230,24 +200,26 @@ class Implementation {
         return intersection;
     }
 
+}
 
-    public  boolean isCyclic(){
-        int total = 0;
-        Node current = linkedList.head;
-        while(current != null){
-            total++;
-            current= current.next;
-        }
-        current = linkedList.head;
-        // while(total>0){
-        //     if(current.next==null){
-        //         return false;
-        //     }
-        //     current = current.next;
-        //     total--;
-        // }
-        return true;
+
+class Implementation {
+    LinkedList linkedList = new LinkedList();
+
+    public void createNewList() {
+        linkedList.head = new Node(1);
+        Node second = new Node(1);
+        Node third = new Node(2);
+        Node four = new Node(3);
+        Node five = new Node(3);
+        Node six = new Node(4);
+
+        six.next = second;
+        five.next = six;
+        four.next = five;
+        third.next = four;
+        second.next = third;
+        linkedList.head.next = second;
     }
-
 
 }
