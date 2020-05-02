@@ -11,32 +11,62 @@ app.controller('AlgorithmsController', ['$scope', function ($scope) {
             'studied': true
         },
 
-        // {
-        //     'title': 'Insertion Sort',
-        //     'hasMediumPost': false,
-        //     'mediumPostUrl': '',
-        //     'hasGithubCode': false,
-        //     'githubCodeUrl': '',
-        //     'studied': true
-        // },
+        {
+            'title': 'Quick Sort',
+            'hasMediumPost': true,
+            'mediumPostUrl': 'https://medium.com/@itIsMadhavan/algorithms-quick-sort-4e611ec07042',
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
 
-        // {
-        //     'title': 'Selection Sort',
-        //     'hasMediumPost': false,
-        //     'mediumPostUrl': '',
-        //     'hasGithubCode': false,
-        //     'githubCodeUrl': '',
-        //     'studied': true
-        // },
+        {
+            'title': 'Merge Sort',
+            'hasMediumPost': false,
+            'mediumPostUrl': '',
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
 
-        // {
-        //     'title': 'Merge Sort',
-        //     'hasMediumPost': false,
-        //     'mediumPostUrl': '',
-        //     'hasGithubCode': false,
-        //     'githubCodeUrl': '',
-        //     'studied': true
-        // },
+        {
+            'title': 'Insertion Sort',
+            'hasMediumPost': false,
+            'mediumPostUrl': '',
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
+            'title': 'Heap Sort',
+            'hasMediumPost': false,
+            'mediumPostUrl': '',
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
+            'title': 'Bubble Sort',
+            'hasMediumPost': false,
+            'mediumPostUrl': '',
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
+            'title': 'Selection Sort',
+            'hasMediumPost': false,
+            'mediumPostUrl': '',
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
     ];
 }]);
 
@@ -52,6 +82,15 @@ app.controller('DataStructuresController', ['$scope', function ($scope) {
             'inprogress': true
         },
         {
+            'title': 'Multi-Dimentional Array',
+            'hasMediumPost': false,
+            'mediumPostUrl': null,
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
             'title': 'Linked List',
             'hasMediumPost': false,
             'mediumPostUrl': null,
@@ -59,6 +98,42 @@ app.controller('DataStructuresController', ['$scope', function ($scope) {
             'githubCodeUrl': 'https://github.com/brain-gym/dataStructure-algorithms/blob/master/competitive%20programming/src/com/company/dataStructure/LinkedList.java',
             'studied': false,
             'inprogress': true
-        }
+        },
+        {
+            'title': 'Doubly linked list',
+            'hasMediumPost': false,
+            'mediumPostUrl': null,
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
+            'title': 'Stack',
+            'hasMediumPost': false,
+            'mediumPostUrl': null,
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
+            'title': 'Queue',
+            'hasMediumPost': false,
+            'mediumPostUrl': null,
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
+        {
+            'title': 'Graph',
+            'hasMediumPost': false,
+            'mediumPostUrl': null,
+            'hasGithubCode': false,
+            'githubCodeUrl': '',
+            'studied': false,
+            'inprogress': true
+        },
     ];
 }]);

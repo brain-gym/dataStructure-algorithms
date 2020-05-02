@@ -1,8 +1,5 @@
 package com.company.dataStructure;
 
-import javax.management.MBeanTrustPermission;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class Array {
@@ -20,7 +17,7 @@ public class Array {
         }
     }
 
-    public void rotateArray(int noOfSteps) {
+    public void rotateClockWise(int noOfSteps) {
         for (int i = 0; i < noOfSteps; i++) {
             int temp = numArray[0];
             for (int j = 0; j < numArray.length - 1; j++) {
@@ -30,7 +27,7 @@ public class Array {
         }
     }
 
-    public void anotherRotateArray(int noOfSteps) {
+    public void rotateAntiClockwise(int noOfSteps) {
         for (int i = 0; i < noOfSteps; i++) {
             int temp = numArray[numArray.length - 1];
             for (int j = numArray.length - 2; j >= 0; j--) {
@@ -48,7 +45,6 @@ public class Array {
         if (start >= end) {
             return;
         }
-
         int temp = arr[start];
         arr[start] = end;
         arr[end] = temp;
@@ -87,10 +83,53 @@ public class Array {
                 break;
             }
         }
-
         for (int i = index; i < numArray.length - 1; i++) {
             numArray[i] = numArray[i + 1];
         }
+    }
+
+
+    public int findTheMissingNumberBetweenOneToHundred() {
+        int sum = 0;
+        int expectedSum = 0;
+        for (int i = 0; i < 100; i++) {
+            expectedSum += i;
+        }
+        for (int i = 0; i < numArray.length; i++) {
+            sum += numArray[i];
+        }
+        return expectedSum - sum;
+    }
+
+
+    public void findPairWithSum(int sum) {
+        int leftPointer = 0;
+        int rightPointer = numArray.length - 1;
+
+        while (leftPointer < rightPointer) {
+
+            if (numArray[leftPointer] + numArray[rightPointer] == sum) {
+                System.out.println(leftPointer + "," + rightPointer);
+            }
+            if (numArray[leftPointer] + numArray[rightPointer] < sum) {
+                leftPointer++;
+            } else {
+                rightPointer--;
+            }
+        }
+    }
+
+    public void findMinAndMaxElementWithoutSorting() {
+        int smallest = 0, largest = 0;
+        largest = smallest = numArray[0];
+        for (int i = 0; i < numArray.length; i++) {
+            if (numArray[i] > largest) {
+                largest = numArray[i];
+            } else if (numArray[i] < smallest) {
+                smallest = numArray[i];
+            }
+        }
+        System.out.println("smallest:" + smallest + " & largest:" + largest);
     }
 
 

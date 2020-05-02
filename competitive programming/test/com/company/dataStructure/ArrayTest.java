@@ -1,6 +1,5 @@
 package com.company.dataStructure;
 
-import com.company.dataStructure.Array;
 import org.junit.jupiter.api.Test;
 
 class ArrayTest {
@@ -9,15 +8,15 @@ class ArrayTest {
     void rotateArray() {
         Array arr = new Array();
         arr.createArray();
-        arr.rotateArray(6);
+        arr.rotateClockWise(6);
         arr.print();
     }
 
     @Test
-    void anotherRotateArray(){
+    void anotherRotateArray() {
         Array arr = new Array();
         arr.createArray();
-        arr.anotherRotateArray(3);
+        arr.rotateAntiClockwise(3);
         arr.print();
     }
 
@@ -38,7 +37,7 @@ class ArrayTest {
     }
 
     @Test
-    void shuffleArray(){
+    void shuffleArray() {
         Array arr = new Array();
         arr.createArray();
         arr.shuffleArray();
@@ -46,10 +45,44 @@ class ArrayTest {
     }
 
     @Test
-    void deleteArray(){
+    void deleteArray() {
         Array arr = new Array();
         arr.createArray();
         arr.deleteElement(3);
         arr.print();
+    }
+
+    @Test
+    void findPairSumZero() {
+        Array arr = new Array();
+        arr.numArray = new int[]{-3, -2, -1, 0, 1, 2, 5};
+        arr.findPairWithSum(0);
+    }
+
+    @Test
+    void findPairSum() {
+        Array arr = new Array();
+        arr.createArray();
+        arr.findPairWithSum(10);
+    }
+
+    @Test
+    void findTheMissingNum() {
+        Array arr = new Array();
+        int missingNumber = 50;
+        arr.numArray = new int[100];
+        for (int i = 0; i < 100; i++) {
+            if (i != missingNumber) {
+                arr.numArray[i] = i;
+            }
+        }
+        System.out.println(arr.findTheMissingNumberBetweenOneToHundred());
+    }
+
+    @Test
+    void findMinAndMaxElementWithoutSorting() {
+        Array arr = new Array();
+        arr.numArray = new int[]{10, -2147483647, 40, 2147483647};
+        arr.findMinAndMaxElementWithoutSorting();
     }
 }
